@@ -69,7 +69,6 @@ def gettrails(map, rn,en,num):
     rn = int(rn)
     en = int(en)
     steps=[[-1,0],[0,-1],[0,1],[1,0]]
-    results=[]
 
     for stepnum,step in enumerate(steps):
         if rn==0:
