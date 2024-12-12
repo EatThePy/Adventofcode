@@ -137,6 +137,7 @@ for l in trailsall:
         print(ll)
     print("\n")
     
-print("\n")    
+print("\n")
+print("Input file:")
 print(inp+"\n")
 print("\n"+"Total paths = "+str(totalpaths)+"\n")
