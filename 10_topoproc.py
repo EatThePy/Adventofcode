@@ -100,8 +100,8 @@ def gettrails(map, rn,en,num):
             gettrails(map,rnnext,ennext,nextnum)
 
     #After the loop, 9 has been already added to trails
-    #or not found higher num and need to revert to previous depth
-    # delete this step     
+    #or not found higher num and need to revert to previous depth,
+    #delete this step     
     if len(trail_interm)>0: del trail_interm[-1]
 
     return
