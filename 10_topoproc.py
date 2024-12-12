@@ -69,7 +69,6 @@ def gettrails(map, rn,en,num):
     rn = int(rn)
     en = int(en)
     steps=[[-1,0],[0,-1],[0,1],[1,0]]
-    found=False
     results=[]
 
     for stepnum,step in enumerate(steps):
@@ -95,7 +94,6 @@ def gettrails(map, rn,en,num):
             ennext=en+step[1]
             trail_interm.append([rnnext,ennext, nextnum])
             if nextnum==9:
-                found = True
                 trails.append(trail_interm)
                 trail_interm = []
                 continue
