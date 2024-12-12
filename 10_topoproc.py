@@ -70,6 +70,7 @@ trailsall=[]
 map = inp.split('\n')
 startnum = 0
 totalpaths = 0
+part2paths = 0
 for rn,r in enumerate(map):
     for en,e in enumerate(r):
         if e == "0":
@@ -79,6 +80,7 @@ for rn,r in enumerate(map):
             trail_interm=[]
             #Get only the positions of 9 in this iter
             trailendscurr=[line[-1] for line in trails]
+            part2paths = part2paths+len(trailendscurr)
             #Remove duplicates
             unique_listcurr = [x for i, x in enumerate(trailendscurr) if x not in trailendscurr[:i]]
             #Add trail numbers from this iter to total
@@ -95,4 +97,5 @@ for l in trailsall:
     
 print("Input file:")
 print(inp+"\n")
-print("\n"+"Total paths = "+str(totalpaths)+"\n")
+print("\n"+"Total part1 paths = "+str(totalpaths)+"\n")
+print("\n"+"Total part2 paths = "+str(part2paths)+"\n")
