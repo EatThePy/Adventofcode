@@ -87,7 +87,7 @@ def gettrails(map, rn,en,num):
             nextnum=int(map[rn+step[0]][en+step[1]])
         except:
             #If a character is not a number for testing
-            nextnum = -10
+            continue
         if nextnum==num+1:
             rnnext=rn+step[0]
             ennext=en+step[1]
