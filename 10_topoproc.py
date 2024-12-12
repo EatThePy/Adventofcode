@@ -97,5 +97,5 @@ for l in trailsall:
     
 print("Input file:")
 print(inp+"\n")
-print("\n"+"Total part1 paths = "+str(totalpaths)+"\n")
-print("\n"+"Total part2 paths = "+str(part2paths)+"\n")
+print("\n"+"Total part1 paths = "+str(totalpaths))
+print("Total part2 paths = "+str(part2paths)+"\n")
