@@ -62,7 +62,7 @@ global trail_interm
 trail_interm=[]
 
 
-def checkifstep(map, rn,en,num):
+def gettrails(map, rn,en,num):
     global trail_interm
     global trails
 
@@ -100,7 +100,7 @@ def checkifstep(map, rn,en,num):
                 trail_interm = []
                 continue
             #Found a higher num, go one level deeper from there
-            checkifstep(map,rnnext,ennext,nextnum)
+            gettrails(map,rnnext,ennext,nextnum)
 
     #After the loop, 9 has been already added to trails
     #or not found higher num and need to revert to previous depth
@@ -119,7 +119,7 @@ for rn,r in enumerate(map):
         if e == "0":
             trail_interm.append([rn,en,0])
             trails = []
-            checkifstep(map, rn, en, startnum)
+            gettrails(map, rn, en, startnum)
             trail_interm=[]
             #Get only the positions of 9 in this iter
             trailendscurr=[line[-1] for line in trails]
