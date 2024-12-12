@@ -11,7 +11,7 @@ inptest='''89010123
 32019012
 01329801
 10456732'''
-#This should be 36
+#This should be 36 for part1, 81 for part2
 
 inp=inptest
 
