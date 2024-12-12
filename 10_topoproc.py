@@ -131,7 +131,7 @@ for rn,r in enumerate(map):
             trailsall.append(trails)
 
 for l in trailsall:
-    print(f"Paths from",l[0][0])
+    print(f"All paths from",l[0][0])
     print("row col num")
     for ll in l:
         print(ll)
